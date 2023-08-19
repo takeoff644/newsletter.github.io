@@ -1,0 +1,164 @@
+:root{
+    --back:#37384c;
+    --accent:linear-gradient(to right, #fe5576, #ff576a, #ff5b5d, #ff6050, #ff6643);
+    --accent2:rgb(36,38,67,0.5);
+    --accent3:rgb(36,38,67);
+    --font1:2.5em;
+    --font2:1.5em;
+    --pad:2em;
+    --image:<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--back);
+    position: relative;
+    
+}
+.name{
+    margin-top: 0;
+    color:white;
+}
+.container{
+    background-color: white;
+    width: 52%;
+    height: 28em;
+    margin-top: 8em;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "...item1 item2...";
+    border-radius: 1em;   
+
+}
+.item1{
+    padding-top: 3em;
+    grid-area: item1;
+}
+.item2{
+    display: grid;
+    place-items: center;
+    grid-area: item2;
+}
+.font1{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font1);
+    font-weight: 1000;
+    margin-left: 0.9em;
+    padding: 0;
+    color:var(--accent3);
+
+}
+.font2{
+    margin-left: 2em;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.font3{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 800;
+}
+ul{
+    margin-left: 3em;
+}
+ul li{
+    list-style-type: none;
+    list-style-image: url(images/icon-list.svg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    
+}
+.font3{
+    margin-left: 2em;
+    font-size: small;
+}
+.item3{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: red;
+    margin: 0.4em;
+
+}
+.Error{
+    display: none;
+}
+input{
+    margin-left: 2em;
+    font-size: large;
+    cursor: pointer;
+    width: 18.5em;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    outline: transparent;
+    border: 0.3em solid var(--accent2);
+    transition: all 1s ease-in-out;
+
+}
+button{
+    margin-left: 2em;
+    margin-top: 1em;
+    font-size: large;
+    width: 18.5em;
+    padding: 0.8em;
+    color: white;
+    background-color: var(--accent3);
+    border: transparent;
+    border-radius: 0.5em;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+svg{
+    height: 420px;
+    position: absolute;
+    margin-right: 0;
+}
+button:hover{
+    background-image: var(--accent);
+}
+input:hover{
+    border: 0.3em solid var(--accent3);
+}
+@media (max-width: 768px){
+    body{
+        position: relative;
+        height: 100vh;
+    }
+    .container{
+        position: relative;
+        height: 100vh;
+        width:100vw;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "...item2..."
+        "...item1...";
+       border-radius: 0;
+       margin-bottom: 0;
+    }
+    .item1{
+        display: grid;
+        justify-content: center;
+        padding-bottom: 3em;
+    }
+    .item2{
+        padding-top: 0;
+        margin-top: 0;
+        z-index: 10;
+        display: grid;
+        justify-content: center;
+    }
+    picture{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+}

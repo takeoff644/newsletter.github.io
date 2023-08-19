@@ -1,0 +1,116 @@
+
+:root{
+    --back:#37384c;
+    --accent:linear-gradient(to right, #fe5576, #ff576a, #ff5b5d, #ff6050, #ff6643);
+    --accent3:#242643;
+    --font1:2.5em;
+    --font2:1.5em;
+    --pad:2em;
+
+}
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--back);
+    position: relative;
+    
+}
+.thankyou{
+    width: 23em;
+    height: 23em;
+    background:white;
+    position: absolute;
+    margin-top: 17vh;
+    border-radius: var(--pad);
+    padding: var(--pad);
+    position: relative;
+
+}
+.container{
+    position: absolute;
+    width: 60%;
+    height: 7em;
+    display: grid;
+    align-items: center;
+}
+.container2{
+    position: absolute;
+    margin-top: 9em;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.font1{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font1);
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    color:var(--accent3);
+
+}
+.font2{
+    font-size:small;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-size: large;
+    background-color: var(--accent3);
+    border: transparent;
+    width: 20em;
+    height: 3em;
+    color: white;
+    border-radius: 0.5em;
+    transition: all 1s ease-in-out;
+    margin-top: 3em;
+}
+button:hover{
+    background-image: var(--accent);
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .thankyou{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: grid;
+        border-radius: 0;
+        overflow-y: hidden;
+        
+        
+    }
+    .container{
+        margin-left: 2em;
+        margin-top: 7em;
+        width: 100vw;
+    }
+    .container2{
+        margin-left: 2em;
+        margin-top: 20em;
+        display: grid;
+        justify-content: center;
+        height: auto;
+        width: 100vw;
+    }
+    button{
+        width: 15em;
+        margin-top: 7em;
+    }
+    svg{
+        position: absolute;
+        margin-left: 2em;
+    }
+    .font2{
+        font-size: large;
+    }
+    button{
+        margin-top: 7em;
+    }
+    
+}

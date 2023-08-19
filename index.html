@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <a href="newsletter success.html" target="_blank"></a>
+    <script defer src="index.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <span class="font1">Stay updated!</span>
+            <p class="font2">Join 60,000+ product managers recieving monthly updates on:</p>
+            <ul>
+                <li>Product discover and building what matters</li>
+                <li>Measuring to ensure products are a success</li>
+                <li>And much more!</li>
+            </ul>
+            <div class="item3"><span class="font3">Email adress</span><span class="Error" id="error">valid email required</span></div>
+            
+            <input id="Email" type="email" pattern="[a-zA-Z0-9]+[@a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}" placeholder="email@company.com">
+            <button type="submit" onclick="validate()">Subscribe to my monthly newsletter</button>
+
+        </div>
+        <div class="item2">
+            <picture>
+                <source media="(max-width:768px)" srcset="images/illustration-sign-up-mobile.svg" />
+                <img id="IMAGE" src="images/illustration-sign-up-desktop.svg" alt="product" loading="lazy" >  
+            </picture>
+            
+        </div>
+    </div>
+
+</body>
+</html>
