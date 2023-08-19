@@ -8,7 +8,6 @@ const format=  /\S+@\S+\.\S+/;
 function validate(){
   
     if (format.test(val)){
-        email.style.border ="0.3em solid green";
         error.style.display="none";
         window.open("newsletter success.html", '_blank');
     } 
