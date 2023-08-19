@@ -3,7 +3,7 @@ const submit = document.getElementById("submit");
 const error= document.getElementById("error");
 const email= document.getElementById("Email"); 
 const val = document. querySelector('input'). value;   
-const format=  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const format=  /\S+@\S+\.\S+/;
 
 function validate(){
   
