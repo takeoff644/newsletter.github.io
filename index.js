@@ -1,7 +1,7 @@
 
 const submit = document.getElementById("submit");
 const error= document.getElementById("error");
-const email= $('#email'); 
+const email= document.getElementById("Email"); 
 const val =  email.value;
 const format= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
