@@ -1,12 +1,11 @@
 
 const submit = document.getElementById("submit");
 const error= document.getElementById("error");
-const email= document.getElementById("Email"); 
-const val = document. querySelector('input'). value;   
-const format=  /\S+@\S+\.\S+/;
+const email= $('#email'); 
+const val =  email.value;
+const format= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
 function validate(){
-  
     if (format.test(val)){
         error.style.display="none";
         window.open("newsletter success.html", '_blank');
